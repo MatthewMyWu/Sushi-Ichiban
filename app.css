@@ -22,15 +22,33 @@ h2 {
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 550px) {
   .desktop {
     display: none !important;
   }
 }
-.landing img {
+.landing .image_container {
+  position: relative;
+  display: block;
+  padding: 0;
   max-width: 100%;
-  max-height: 100%;
+}
+.landing .image_container img {
   object-fit: cover;
+  vertical-align: top;
+}
+.landing .image_container .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1c0238;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=app.css.map */

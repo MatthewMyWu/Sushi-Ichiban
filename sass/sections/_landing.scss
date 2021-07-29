@@ -1,5 +1,23 @@
-.landing img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+.landing {
+    .image_container {
+        position: relative;
+        display: block;
+        padding: 0;
+        max-width: 100%;
+
+        img {
+            object-fit: cover;
+            vertical-align: top;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #1c0238;
+            opacity: 0.5;
+        }
+    }
 }

@@ -22,6 +22,10 @@ h2 {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+}
+
 @media only screen and (max-width: 550px) {
     .desktop {
         display: none !important;
