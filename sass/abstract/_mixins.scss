@@ -1,10 +1,9 @@
-@mixin overlay($color: rgba(0, 0, 0, 0.342)) {
+@mixin overlay($color: black, $opacity: 0.65) {
     position: absolute;
     top: 0;
-    left: 0;
-    bottom: 0;
     right: 0;
-    z-index: 10;
-
+    bottom: 0;
+    left: 0;
     background-color: $color;
+    opacity: $opacity;
 }

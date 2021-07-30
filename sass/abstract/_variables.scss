@@ -1,2 +1,34 @@
 $headerHeight: 70px;
 $backgroundColour: black;
+
+// COLOURS
+$highlightTextColour: orange;
+$defaultTextColour: white;
+
+// FONTS
+$defaultFont: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+// SCREEN SIZES
+$mobileWidth: 550px;
+$wideWidth: 1550px;
+
+/*
+@media only screen and (max-width: 550px) {
+    body {
+        background-color: red;
+        font-size: 10px;
+    }
+}
+*/
+
+
+// FONT FAMILIES
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Wind Song';
+    src: url("../../fonts/WindSong-Regular.ttf");
+}

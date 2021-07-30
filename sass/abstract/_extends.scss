@@ -1,0 +1,24 @@
+%verticalCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+%horizontalCenter {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}

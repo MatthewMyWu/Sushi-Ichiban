@@ -1,8 +1,12 @@
 .landing {
+    position: relative;
+
+    //IMAGE SECTION
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
     .image_container {
         position: relative;
         display: block;
-        padding: 0;
         max-width: 100%;
 
         img {
@@ -11,13 +15,60 @@
         }
 
         .overlay {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-color: #1c0238;
-            opacity: 0.5;
+            @include overlay();
+        }
+
+        //RESIZING
+        @media only screen and (max-width: $mobileWidth) {
+            height: 100vh;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    // TEXT SECTION
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .text_container {
+        @extend %verticalCenter;
+
+        h1,
+        h2 {
+            display: block;
+            text-align: center;
+            padding: none;
+            margin: 10px;
+        }
+
+        h1 {
+            color: $highlightTextColour;
+            font-family: "Wind Song";
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        //RESIZING
+        @media only screen and (max-width: $mobileWidth) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media only screen and (min-width: $wideWidth) {
+            h1 {
+                font-size: 5rem;
+            }
+            h2 {
+                font-size: 4rem;
+            }
         }
     }
 }
