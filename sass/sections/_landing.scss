@@ -1,4 +1,4 @@
-.landing {
+#landing {
     position: relative;
 
     //IMAGE SECTION
@@ -14,7 +14,8 @@
             vertical-align: top;
         }
 
-        .overlay {
+        &::after {
+            content: "";
             @include overlay();
         }
 
