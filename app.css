@@ -1,5 +1,5 @@
 /*
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: $mobileWidth) {
     body {
         background-color: red;
         font-size: 10px;
@@ -14,7 +14,7 @@
   font-family: "Wind Song";
   src: url("../../fonts/WindSong-Regular.ttf");
 }
-#landing .text_container {
+.landing .text_container, .banner .text_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,9 +63,9 @@ h2 {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1, h2, h3, h4, h5, h6, p, span, li {
   font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: white;
+  color: #d8d8d8;
 }
 
 img {
@@ -77,19 +77,22 @@ img {
     display: none !important;
   }
 }
-#landing {
+.landing, .banner {
   position: relative;
+  max-height: 110vh;
+  overflow: hidden;
 }
-#landing .image_container {
+.landing .image_container, .banner .image_container {
   position: relative;
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
-#landing .image_container img {
+.landing .image_container img, .banner .image_container img {
+  width: 100%;
   object-fit: cover;
   vertical-align: top;
 }
-#landing .image_container::after {
+.landing .image_container::after, .banner .image_container::after {
   content: "";
   position: absolute;
   top: 0;
@@ -100,41 +103,42 @@ img {
   opacity: 0.65;
 }
 @media only screen and (max-width: 550px) {
-  #landing .image_container {
+  .landing .image_container, .banner .image_container {
     height: 100vh;
   }
-  #landing .image_container img {
+  .landing .image_container img, .banner .image_container img {
     height: 100%;
   }
 }
-#landing .text_container h1,
-#landing .text_container h2 {
+.landing .text_container h1, .banner .text_container h1,
+.landing .text_container h2,
+.banner .text_container h2 {
   display: block;
   text-align: center;
   padding: none;
   margin: 10px;
 }
-#landing .text_container h1 {
+.landing .text_container h1, .banner .text_container h1 {
   color: orange;
   font-family: "Wind Song";
   font-size: 3.5rem;
 }
-#landing .text_container h2 {
+.landing .text_container h2, .banner .text_container h2 {
   font-size: 2.5rem;
 }
 @media only screen and (max-width: 550px) {
-  #landing .text_container h1 {
+  .landing .text_container h1, .banner .text_container h1 {
     font-size: 2rem;
   }
-  #landing .text_container h2 {
+  .landing .text_container h2, .banner .text_container h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1550px) {
-  #landing .text_container h1 {
+  .landing .text_container h1, .banner .text_container h1 {
     font-size: 5rem;
   }
-  #landing .text_container h2 {
+  .landing .text_container h2, .banner .text_container h2 {
     font-size: 4rem;
   }
 }
@@ -209,14 +213,27 @@ img {
   }
 }
 
+.banner {
+  width: 100%;
+  max-height: 67vh;
+}
+
+.menu-section {
+  padding-top: 70px;
+  display: inline-block;
+}
+.menu-section img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 header {
   display: block;
+  height: 70px;
   position: sticky;
   top: 0;
   z-index: 100;
-  height: 70px;
-  border: 1px white solid;
-  color: white;
+  border: 1px #cccccc solid;
   font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-left: none;
   border-right: none;
@@ -232,9 +249,68 @@ header ul {
 header ul li {
   display: inline;
   margin: 5px, 0;
+  color: #d8d8d8;
 }
 header ul li img {
   max-height: 63px;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 220px;
+  height: fit-content;
+  position: sticky;
+  top: 85px;
+  padding-left: 35px;
+}
+.sidebar ul {
+  padding-inline-start: 0;
+  list-style: none;
+}
+.sidebar ul li {
+  color: #b1b1b1;
+  line-height: 1.8rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .sidebar {
+    display: block;
+    top: 70px;
+    width: 100%;
+    height: 65px;
+    overflow: scroll;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.849);
+  }
+  .sidebar ul {
+    overflow: visible;
+    white-space: nowrap;
+  }
+  .sidebar ul li {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+}
+#layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  justify-content: start;
+  justify-items: center;
+}
+
+.menu-section {
+  grid-column-start: 2;
+}
+
+@media only screen and (max-width: 550px) {
+  #layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 1fr;
+  }
+
+  .menu-section {
+    grid-column-start: 1;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,9 +1,15 @@
+// HEADER
 $headerHeight: 70px;
 $backgroundColour: black;
 
+// SIDEBAR
+$sidebarWidth: 220px;
+$sidebarHeight: 65px;
+
 // COLOURS
 $highlightTextColour: orange;
-$defaultTextColour: white;
+$defaultTextColour: rgb(216, 216, 216);
+$subtleTextColour: rgb(177, 177, 177);
 
 // FONTS
 $defaultFont: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -14,7 +20,7 @@ $tabletWidth: 1000px;
 $wideWidth: 1550px;
 
 /*
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: $mobileWidth) {
     body {
         background-color: red;
         font-size: 10px;

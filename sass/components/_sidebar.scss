@@ -1,0 +1,42 @@
+.sidebar {
+    display: inline-block;
+    width: $sidebarWidth;
+    height: fit-content;
+    position: sticky;
+    top: $headerHeight + 15px;
+    padding-left: 35px;
+    // border: red 1px solid;
+
+    ul {
+        padding-inline-start: 0;
+        list-style: none;
+
+        li {
+            color: $subtleTextColour;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+// RESIZING
+@media only screen and (max-width: $mobileWidth) {
+    .sidebar {
+        display: block;
+        top: $headerHeight;
+        width: 100%;
+        height: $sidebarHeight;
+        overflow: scroll;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.849);
+
+        ul {
+            overflow: visible;
+            white-space: nowrap;
+
+            li {
+                display: inline-block;
+                padding: 0 1rem;
+            }
+        }
+    }
+}

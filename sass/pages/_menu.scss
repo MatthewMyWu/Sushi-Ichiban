@@ -1,0 +1,24 @@
+#layout {
+    display: grid;
+    grid-template-columns: $sidebarWidth 1fr;
+    justify-content: start;
+    justify-items: center;
+}
+
+.menu-section {
+    grid-column-start: 2;
+}
+
+
+
+// RESIZING
+@media only screen and (max-width: $mobileWidth) {
+    #layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: $sidebarHeight 1fr;
+    }
+
+    .menu-section {
+        grid-column-start: 1;
+    }
+}
