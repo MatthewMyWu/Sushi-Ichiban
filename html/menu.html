@@ -39,18 +39,10 @@
                     <li>super duper long section to fill space</li>
                 </ul>
             </nav>
+            
+            <menu-section id="soups-and-salads" v-bind:section_name="soupsAndSalads"></menu-section>
 
-
-            <section id="soups-and-salads" class="menu-section">
-                <div v-for="menuItem in menuItems">
-                    <menu-item v-bind:name="menuItem.name" v-bind:description="menuItem.description"
-                        v-bind:price="menuItem.price"></menu-item>
-                </div>
-            </section>
-
-            <section id="seafood" class="menu-section">
-                <img src="images/Sample Menu.jpg">
-            </section>
+            <menu-section id="seafood" v-bind:section_name="seafood"></menu-section>
 
             <section id="kitchen" class="menu-section">
                 <img src="images/Sample Menu.jpg">

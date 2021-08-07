@@ -219,15 +219,30 @@ img {
 }
 
 .menu-section {
+  width: 100%;
   padding-top: 70px;
+}
+.menu-section .menu-section-title {
+  display: block;
+  color: white;
+  margin: 0.5rem;
+  background-color: #810505;
+}
+.menu-section .items-container {
   display: flex;
+  width: 100%;
   align-items: start;
   justify-items: flex-start;
   flex-wrap: wrap;
 }
-.menu-section img {
+.menu-section .items-container img {
   margin: 0 auto;
   max-width: 100%;
+}
+@media only screen and (max-width: 550px) {
+  .menu-section {
+    padding-top: 135px;
+  }
 }
 
 header {
