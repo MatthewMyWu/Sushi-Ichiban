@@ -1,6 +1,10 @@
 .menu-section {
     padding-top: $headerHeight;
-    display: inline-block;
+    display: flex;
+    align-items: start;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+    
     
 
     img {
