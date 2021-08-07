@@ -41,7 +41,7 @@ header ul {
 body {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: #242424;
   font-size: 16px;
 }
 
@@ -240,7 +240,7 @@ header {
   font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-left: none;
   border-right: none;
-  background-color: black;
+  background-color: #242424;
 }
 header ul {
   margin: 0;
@@ -317,7 +317,7 @@ header ul li img {
   font-size: 0.8rem;
   color: orange;
 }
-.menu-item img {
+.menu-item .dish-image {
   width: 80px;
   height: 80px;
   border-radius: 100%;
