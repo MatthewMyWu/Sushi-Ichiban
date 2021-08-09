@@ -1,11 +1,15 @@
 const MenuItem = Vue.component("menu-item", {
     props: ["name", "description", "price"],
     template: `<div class="menu-item">
-    <h3 class="dish-name">{{name}}</h3>
-    <p class="dish-description">{{description}}</p>
-    <p class="dish-price">{{price}}</p>
-    <img class="dish-image" src="./images/Sample Sushi.jpg" alt="">
-</div>`
+        <div class="text-container">
+            <h3 class="dish-name">{{name}}</h3>
+            <p class="dish-description">{{description}}</p>
+            <p class="dish-price">{{price}}</p>
+        </div>
+        <div class="image-container">
+            <img class="dish-image" src="./images/Sample Sushi.jpg" alt="">
+        </div>
+    </div>`
 });
 
 const MenuSection = Vue.component("menu-section", {
@@ -13,7 +17,7 @@ const MenuSection = Vue.component("menu-section", {
     template: `
     <section class="menu-section">
         <h2 class="menu-section-title">{{section_name.name}}</h2>
-                <div class="items-container">
+                <div class="menu-section-container">
                     <menu-item v-for="menuItem in ` + "section_name" + `.items" v-bind:name="menuItem.name" v-bind:description="menuItem.description"
                         v-bind:price="menuItem.price" v-bind:key="menuItem.id"></menu-item>
                 </div>

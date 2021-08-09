@@ -7,6 +7,7 @@ header {
 
     border: 1px rgb(204, 204, 204) solid;
     font-family: $defaultFont;
+    font-size: 1.5rem;
     border-left: none;
     border-right: none;
     background-color: $backgroundColour;
@@ -16,6 +17,7 @@ header {
         margin: 0;
         padding: 0;
         height: $headerHeight;
+        width: 100vw;
         justify-content: space-evenly;
         list-style: none;
 
