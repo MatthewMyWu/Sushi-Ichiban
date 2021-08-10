@@ -97,13 +97,13 @@ const seafood = {
 
 
 
-
+import * as data from "./dish-data/all.js";
 
 
 const menuApp = new Vue({
     el: "#menu-app",
     data: {
-        soupsAndSalads: soupsAndSalads,
+        soupsAndSalads: data.appetizers,
         seafood: seafood,
     }
 });

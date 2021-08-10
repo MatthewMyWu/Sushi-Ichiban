@@ -10,12 +10,23 @@
     }
 
     .menu-section-container {
+        grid-template-columns: repeat(auto-fill, $dish-number-width + $dish-text-width + $desktop-dish-image-width);
+        text-align: center;
+
+        // RESIZING
+        // NOTE THIS IS COUPLED WITH ../components/_menu-item.scss
+        @media only screen and (max-width: $tabletWidth) {
+            grid-template-columns: repeat(auto-fill, $dish-number-width + $dish-text-width + $mobile-dish-image-width);
+        }
+
+        /*
         display: flex;
         width: 100%;
         align-items: start;
         justify-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        */
 
         // FOR PLACEHOLDER MENUS
         img {

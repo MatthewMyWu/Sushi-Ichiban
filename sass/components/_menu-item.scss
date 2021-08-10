@@ -1,11 +1,14 @@
-$desktop-menu-item-image-height: 120px;
-$desktop-menu-item-image-width: 160px;
-$mobile-menu-item-image-height: 70px;
-$mobile-menu-item-image-width: 100px;
+$desktop-dish-image-height: 120px;
+$desktop-dish-image-width: 160px;
+$mobile-dish-image-height: 70px;
+$mobile-dish-image-width: 100px;
+$dish-number-width: 30px;
+$dish-text-width: 220px;
 
 .menu-item {
     display: inline-grid;
-    grid-template-columns: 30px 220px fit-content($desktop-menu-item-image-width);
+    text-align: left;
+    grid-template-columns: $dish-number-width $dish-text-width fit-content($desktop-dish-image-width);
     column-gap: 8px;
     margin: 20px 15px;
     
@@ -46,12 +49,9 @@ $mobile-menu-item-image-width: 100px;
     }
 
     .image-container {
-        width: $desktop-menu-item-image-width;
-        height: $desktop-menu-item-image-height;
+        width: $desktop-dish-image-width;
+        height: $desktop-dish-image-height;
         grid-column: 3 / span 1;
-
-        align-self: center;
-        justify-self: center;
     }
 
     .dish-image {
@@ -64,8 +64,8 @@ $mobile-menu-item-image-width: 100px;
     // RESIZING
     @media only screen and (max-width: $tabletWidth) {
         .image-container {
-            width: $mobile-menu-item-image-width;
-            height: $mobile-menu-item-image-height;
+            width: $mobile-dish-image-width;
+            height: $mobile-dish-image-height;
         }
 
         .dish-name {
