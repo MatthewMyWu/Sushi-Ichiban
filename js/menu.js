@@ -49,46 +49,16 @@ const soupsAndSalads = {
     ]
 };
 
-const seafood = {
-    name: "Seafood",
-    items: [
-        {
-            number: "5",
-            name: "seafood 1",
-            description: "sea 1",
-            price: "1",
-        },
-        {
-            number: "6",
-            name: "seafood 2",
-            description: "sea 2",
-            price: "2",
-        },
-        {
-            number: "7",
-            name: "seafood 3",
-            description: "sea 3",
-            price: "3",
-        },
-        {
-            number: "8",
-            name: "seafood 4",
-            description: "sea 4",
-            price: "4",
-        },
-    ]
-};
 
 
-
-import * as data from "./dish-data/all.js";
+import * as dishData from "./dish-data/all.js";
 
 
 const menuApp = new Vue({
     el: "#menu-app",
     data: {
         // appetizers: data.appetizers,
-        appetizers: data.appetizers,
-        seafood: seafood,
+        appetizers: dishData.appetizers,
+        tempura: dishData.tempura,
     }
 });
