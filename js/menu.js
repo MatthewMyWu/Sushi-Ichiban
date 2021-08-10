@@ -103,7 +103,7 @@ import * as data from "./dish-data/all.js";
 const menuApp = new Vue({
     el: "#menu-app",
     data: {
-        soupsAndSalads: data.appetizers,
+        appetizers: data.appetizers,
         seafood: seafood,
     }
 });
