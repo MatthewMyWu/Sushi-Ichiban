@@ -1,5 +1,5 @@
 const MenuItem = Vue.component("menu-item", {
-    props: ["number", "name", "description", "price"],
+    props: ["number", "name", "description", "price", "image"],
     template: `<div class="menu-item">
         <div class="number-container">
             <p class="dish-number">{{number}}:</p>
@@ -10,7 +10,7 @@ const MenuItem = Vue.component("menu-item", {
             <p class="dish-price">{{price}}</p>
         </div>
         <div class="image-container">
-            <img class="dish-image" src="./images/Sample Sushi.jpg" alt="">
+            <img class="dish-image" :src="image" alt="">
         </div>
     </div>`
 });
@@ -26,6 +26,7 @@ const MenuSection = Vue.component("menu-section", {
                         v-bind:name="menuItem.name"
                         v-bind:description="menuItem.description"
                         v-bind:price="menuItem.price"
+                        v-bind:image="menuItem.image"
                         v-bind:key="menuItem.id">
                     </menu-item>
                 </div>
@@ -43,24 +44,7 @@ const soupsAndSalads = {
             name: "soup and salad 1",
             description: "sas 1",
             price: "1",
-        },
-        {
-            number: "2",
-            name: "soup and salad 2",
-            description: "sas 2",
-            price: "2",
-        },
-        {
-            number: "3",
-            name: "soup and salad 3",
-            description: "sas 3",
-            price: "3",
-        },
-        {
-            number: "4",
-            name: "soup and salad 4",
-            description: "sas 4",
-            price: "4",
+            image: "images/Lone Sushi.jpg",
         },
     ]
 };
@@ -103,6 +87,7 @@ import * as data from "./dish-data/all.js";
 const menuApp = new Vue({
     el: "#menu-app",
     data: {
+        // appetizers: data.appetizers,
         appetizers: data.appetizers,
         seafood: seafood,
     }

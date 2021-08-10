@@ -1,2 +1,2 @@
-const imagePath = "";
+const imagePath = "./images/";
 export { imagePath };
