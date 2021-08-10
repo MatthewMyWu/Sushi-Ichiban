@@ -5,12 +5,13 @@ $mobile-dish-image-width: 100px;
 $dish-number-width: 30px;
 $dish-text-width: 220px;
 $dish-horizontal-margin: 10px;
+$dish-column-gap: 4px;
 
 .menu-item {
     text-align: left;
     display: inline-grid;
     grid-template-columns: $dish-number-width $dish-text-width fit-content($desktop-dish-image-width);
-    column-gap: 8px;
+    column-gap: $dish-column-gap;
     margin: 20px $dish-horizontal-margin;
     
 

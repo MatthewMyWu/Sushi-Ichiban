@@ -27,9 +27,9 @@
         align-items: start;
         justify-content: left;
         flex-wrap: wrap;
-        $min-column-width: $dish-number-width + $dish-text-width + $mobile-dish-image-width;
+        $min-column-width: $dish-number-width + $dish-text-width + $mobile-dish-image-width + 2*$dish-horizontal-margin + 2*$dish-column-gap;
 
-        @media only screen and (max-width: 771px) {
+        @media only screen and (max-width: 2*$min-column-width - 1px) {
             justify-content: center;
         }
         

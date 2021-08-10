@@ -147,7 +147,7 @@ header ul li img {
   text-align: left;
   display: inline-grid;
   grid-template-columns: 30px 220px fit-content(160px);
-  column-gap: 8px;
+  column-gap: 4px;
   margin: 20px 10px;
 }
 .menu-item .number-container {
@@ -376,7 +376,7 @@ header ul li img {
   justify-content: left;
   flex-wrap: wrap;
 }
-@media only screen and (max-width: 771px) {
+@media only screen and (max-width: 755px) {
   .menu-section .menu-section-container {
     justify-content: center;
   }
