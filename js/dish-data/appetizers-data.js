@@ -143,7 +143,7 @@ const appetizers = {
         },
         {
             number: "131",
-            name: "BBQ Squic",
+            name: "BBQ Squid",
             description: "",
             price: "11.95",
         },

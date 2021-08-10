@@ -4,13 +4,14 @@ $mobile-dish-image-height: 70px;
 $mobile-dish-image-width: 100px;
 $dish-number-width: 30px;
 $dish-text-width: 220px;
+$dish-horizontal-margin: 10px;
 
 .menu-item {
-    display: inline-grid;
     text-align: left;
+    display: inline-grid;
     grid-template-columns: $dish-number-width $dish-text-width fit-content($desktop-dish-image-width);
     column-gap: 8px;
-    margin: 20px 15px;
+    margin: 20px $dish-horizontal-margin;
     
 
     .number-container {
@@ -76,7 +77,5 @@ $dish-text-width: 220px;
     // MOBILE
     @media only screen and (max-width: $mobileWidth) {
         column-gap: 4px;
-        margin-left: 4px;
-        margin-right: 4px;
     }
 }

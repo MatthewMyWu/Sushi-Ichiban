@@ -10,23 +10,30 @@
     }
 
     .menu-section-container {
-        grid-template-columns: repeat(auto-fill, $dish-number-width + $dish-text-width + $desktop-dish-image-width);
-        text-align: center;
-
-        // RESIZING
-        // NOTE THIS IS COUPLED WITH ../components/_menu-item.scss
-        @media only screen and (max-width: $tabletWidth) {
-            grid-template-columns: repeat(auto-fill, $dish-number-width + $dish-text-width + $mobile-dish-image-width);
-        }
-
         /*
+        $column-width: $dish-number-width + $dish-text-width + $desktop-dish-image-width;
+        grid-template-columns: repeat(auto-fit, $column-width);
+        text-align: left;
+        
+        @media only screen and (min-width: $tabletWidth) and (max-width: 1140px) {
+            text-align: center;
+        }
+        */
+        
+
+        
         display: flex;
         width: 100%;
         align-items: start;
-        justify-items: center;
-        justify-content: center;
+        justify-content: left;
         flex-wrap: wrap;
-        */
+        $min-column-width: $dish-number-width + $dish-text-width + $mobile-dish-image-width;
+
+        @media only screen and (max-width: 771px) {
+            justify-content: center;
+        }
+        
+        
 
         // FOR PLACEHOLDER MENUS
         img {
