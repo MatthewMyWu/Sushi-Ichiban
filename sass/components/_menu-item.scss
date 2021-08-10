@@ -1,43 +1,82 @@
-$image-size: 80px;
+$desktop-menu-item-image-height: 120px;
+$desktop-menu-item-image-width: 160px;
+$mobile-menu-item-image-height: 70px;
+$mobile-menu-item-image-width: 100px;
 
 .menu-item {
     display: inline-grid;
-    padding: 10px 30px;
-    grid-template: 1fr 1fr 1fr / 250px $image-size;
-    column-gap: 1rem;
+    grid-template-columns: 30px 220px fit-content($desktop-menu-item-image-width);
+    column-gap: 8px;
+    margin: 20px 15px;
+    
 
-    .dish-name, .dish-description, .dish-price {
-        margin: 0;
+    .number-container {
         grid-column: 1 / span 1;
     }
 
-    .dish-name {
-        grid-row: 1 / span 1;
+    .text-container {
+        grid-column: 2 / span 1;
     }
 
+    
+    .dish-name,
+    .dish-description,
+    .dish-price {
+        margin: 0.5rem;
+    }
+
+    .dish-name {
+        font-size: 1.5rem;
+    }
+
+    .dish-number {
+        text-align: right;
+        margin: 12px 0;
+    }
+
+    .dish-number,
     .dish-description {
-        grid-row: 2 / span 1;
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: $subtleTextColour;
     }
 
     .dish-price {
-        grid-row: 3 / span 1;
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: $highlightTextColour;
     }
 
-
-    img {
-        width: $image-size;
-        height: $image-size;
-        border-radius: 100%;
-        object-fit: cover;
-        
-        grid-row: 1 / span 3;
-        grid-column: 2 / span 1;
+    .image-container {
+        width: $desktop-menu-item-image-width;
+        height: $desktop-menu-item-image-height;
+        grid-column: 3 / span 1;
 
         align-self: center;
         justify-self: center;
+    }
+
+    .dish-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+        object-fit: cover;
+    }
+
+    // RESIZING
+    @media only screen and (max-width: $tabletWidth) {
+        .image-container {
+            width: $mobile-menu-item-image-width;
+            height: $mobile-menu-item-image-height;
+        }
+
+        .dish-name {
+            font-size: 1.2rem;
+        }
+    }
+    
+    // MOBILE
+    @media only screen and (max-width: $mobileWidth) {
+        column-gap: 4px;
+        margin-left: 4px;
+        margin-right: 4px;
     }
 }

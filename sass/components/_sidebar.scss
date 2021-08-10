@@ -19,7 +19,7 @@
 }
 
 // RESIZING
-@media only screen and (max-width: $mobileWidth) {
+@media only screen and (max-width: $tabletWidth) {
     .sidebar {
         display: block;
         top: $headerHeight;

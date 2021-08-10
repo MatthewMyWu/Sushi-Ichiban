@@ -10,6 +10,10 @@
     <link href="./app.css" rel="stylesheet">
     <script type='module' src="./app.js" defer></script>
     <title>Sushi Ichiban</title>
+
+    <!-- VUE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="./js/menu.js" defer></script>
 </head>
 
 <body>
@@ -25,32 +29,25 @@
     <header-component></header-component>
 
 
-    <div id="layout">
-        <nav class="sidebar">
-            <ul>
-                <li><a href="./html/menu.html#soups-and-salads">Soups and Salads</a></li>
-                <li><a href="./html/menu.html#seafood">Seafood</a></li>
-                <li><a href="./html/menu.html#kitchen">Kitchen</a></li>
-                <li>super duper long section to fill space</li>
-            </ul>
-        </nav>
+    <div id="menu-app">
+        <div id="layout">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="./html/menu.html#soups-and-salads">Soups and Salads</a></li>
+                    <li><a href="./html/menu.html#seafood">Seafood</a></li>
+                    <li><a href="./html/menu.html#kitchen">Kitchen</a></li>
+                    <li>super duper long section to fill space</li>
+                </ul>
+            </nav>
+            
+            <menu-section id="soups-and-salads" v-bind:section_name="soupsAndSalads"></menu-section>
 
+            <menu-section id="seafood" v-bind:section_name="seafood"></menu-section>
 
-        <section id="soups-and-salads" class="menu-section">
-            <menu-item-component></menu-item-component>
-            <menu-item-component></menu-item-component>
-            <menu-item-component></menu-item-component>
-            <menu-item-component></menu-item-component>
-            <menu-item-component></menu-item-component>
-        </section>
-
-        <section id="seafood" class="menu-section">
-            <img src="images/Sample Menu.jpg">
-        </section>
-
-        <section id="kitchen" class="menu-section">
-            <img src="images/Sample Menu.jpg">
-        </section>
+            <section id="kitchen" class="menu-section">
+                <img src="images/Sample Menu.jpg">
+            </section>
+        </div>
     </div>
 
 
