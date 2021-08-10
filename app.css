@@ -320,9 +320,15 @@ header ul li img {
 }
 .menu-item {
   display: inline-grid;
-  grid-template-columns: 220px fit-content(160px);
+  grid-template-columns: 30px 220px fit-content(160px);
   column-gap: 8px;
   margin: 20px 15px;
+}
+.menu-item .number-container {
+  grid-column: 1/span 1;
+}
+.menu-item .text-container {
+  grid-column: 2/span 1;
 }
 .menu-item .dish-name,
 .menu-item .dish-description,
@@ -332,6 +338,11 @@ header ul li img {
 .menu-item .dish-name {
   font-size: 1.5rem;
 }
+.menu-item .dish-number {
+  text-align: right;
+  margin: 12px 0;
+}
+.menu-item .dish-number,
 .menu-item .dish-description {
   font-size: 1rem;
   color: #b1b1b1;
@@ -340,26 +351,33 @@ header ul li img {
   font-size: 1rem;
   color: orange;
 }
+.menu-item .image-container {
+  width: 160px;
+  height: 120px;
+  grid-column: 3/span 1;
+  align-self: center;
+  justify-self: center;
+}
 .menu-item .dish-image {
   width: 100%;
   height: 100%;
   border-radius: 20%;
   object-fit: cover;
 }
-.menu-item .image-container {
-  width: 160px;
-  height: 120px;
-  grid-column: 2/span 1;
-  align-self: center;
-  justify-self: center;
-}
 @media only screen and (max-width: 1050px) {
   .menu-item .image-container {
-    width: 120px;
-    height: 80px;
+    width: 100px;
+    height: 70px;
   }
   .menu-item .dish-name {
     font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .menu-item {
+    column-gap: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 }
 
