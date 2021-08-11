@@ -16,7 +16,7 @@ const appetizers = {
             name: "Miso Soup",
             description: "",
             price: "2.20",
-            image: placeholder,
+            image: path + "miso soup.jpg",
         },
         {
             number: "102",

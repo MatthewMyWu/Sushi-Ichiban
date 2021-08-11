@@ -60,5 +60,7 @@ const menuApp = new Vue({
         // appetizers: data.appetizers,
         appetizers: dishData.appetizers,
         tempura: dishData.tempura,
+        noodles: dishData.noodles,
+        dinner: dishData.dinner,
     }
 });

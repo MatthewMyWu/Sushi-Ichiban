@@ -1,0 +1,73 @@
+import { imagePath, placeholder, } from "./paths.js";
+const path = imagePath + "dinner images/";
+
+const dinner = {
+    name: "Dinner",
+    items:  [
+        {
+            number: "401",
+            name: "Teriyaki Chicken",
+            description: "BBQ chicken glazed wtih teriyaki sauce",
+            price: "16.95",
+            image: path + "teriyaki chicken.jpg",
+        },
+        {
+            number: "402",
+            name: "Teriyaki Beef",
+            description: "Pan fried sliced beef with teriyaki sauce",
+            price: "16.95",
+            image: path + "teriyaki beef.jpg",
+        },
+        {
+            number: "403",
+            name: "Teriyaki Salmon",
+            description: "salmon fillet grilled to perfection",
+            price: "18.95",
+            image: path + "teriyaki salmon.jpg",
+        },
+        {
+            number: "404",
+            name: "Ginger Chicken",
+            description: "Deep fried shredded chicken with ginger sauce",
+            price: "16.95",
+            image: placeholder,
+        },
+        {
+            number: "408",
+            name: "Ginger Beef",
+            description: "Deep fried beef with ginger sauce",
+            price: "16.95",
+            image: placeholder,
+        },
+        {
+            number: "405",
+            name: "Tonkatsu Don",
+            description: "Deep fried breaded pork with onion and egg on rice",
+            price: "12.95",
+            image: placeholder,
+        },
+        {
+            number: "406",
+            name: "Chicken Teriyaki & Tempura",
+            description: "",
+            price: "20.95",
+            image: placeholder,
+        },
+        {
+            number: "407",
+            name: "Sushi & Tempura",
+            description: "",
+            price: "20.95",
+            image: path + "sushi & tempura.jpg",
+        },
+        {
+            number: "409",
+            name: "Unagi Don",
+            description: "",
+            price: "18.95",
+            image: path + "unagi don.jpg",
+        },
+    ],
+};
+
+export { dinner };
