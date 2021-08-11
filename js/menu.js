@@ -63,5 +63,7 @@ const menuApp = new Vue({
         noodles: dishData.noodles,
         dinner: dishData.dinner,
         maki_rolls: dishData.maki_rolls,
+        nigiri_and_sashimi: dishData.nigiri_and_sashimi,
+        temaki: dishData.temaki,
     }
 });
