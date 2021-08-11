@@ -62,5 +62,6 @@ const menuApp = new Vue({
         tempura: dishData.tempura,
         noodles: dishData.noodles,
         dinner: dishData.dinner,
+        maki_rolls: dishData.maki_rolls,
     }
 });

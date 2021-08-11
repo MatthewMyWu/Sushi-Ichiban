@@ -1,5 +1,5 @@
-import { imagePath, placeholder } from './paths.js'
-const path = imagePath + "appetizer images/";
+import { imageFolderPath, placeholder } from './paths.js'
+const path = imageFolderPath + "appetizer images/";
 
 const appetizers = {
     name: "Appetizers",

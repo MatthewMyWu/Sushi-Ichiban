@@ -1,3 +1,3 @@
-const imagePath = "./images/";
+const imageFolderPath = "./images/";
 const placeholder = "./images/Lone Sushi.jpg"
-export { imagePath, placeholder };
+export { imageFolderPath, placeholder };

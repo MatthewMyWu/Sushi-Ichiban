@@ -1,5 +1,5 @@
-import { imagePath, placeholder } from './paths.js'
-const path = imagePath + "tempura images/";
+import { imageFolderPath, placeholder } from './paths.js'
+const path = imageFolderPath + "tempura images/";
 
 const tempura = {
     name: "Tempura",
