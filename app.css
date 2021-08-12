@@ -8,11 +8,11 @@
 */
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Light.ttf");
+  src: url("fonts/Montserrat-Light.ttf");
 }
 @font-face {
   font-family: "Wind Song";
-  src: url("../../fonts/WindSong-Regular.ttf");
+  src: url("fonts/WindSong-Regular.ttf");
 }
 .landing .text_container, .banner .text_container {
   display: flex;
@@ -288,7 +288,7 @@ header ul li {
 #location {
   display: block;
   position: relative;
-  background-image: url(".images/Interior.jpg");
+  background-image: url("images/Interior.jpg");
   background-size: cover;
   padding: 1.5rem;
   padding-bottom: 120px;
