@@ -107,7 +107,7 @@ const appetizers = {
             name: "Chicken Karaage",
             description: "Deep fried chicken",
             price: "7.50",
-            image: path + "ika karaage.jpg",
+            image: path + "chicken karaage.jpg",
         },
         {
             number: "112",
