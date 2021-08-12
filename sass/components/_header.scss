@@ -12,8 +12,16 @@ header {
     border-right: none;
     background-color: $backgroundColour;
 
+    nav {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
     ul {
         @extend %horizontalCenter;
+        position: absolute;
+        top: 0;
         margin: 0;
         padding: 0;
         height: $headerHeight;
