@@ -81,7 +81,7 @@ header, header-component {
   display: block;
   height: 70px;
   width: 100vw;
-  position: sticky !important;
+  position: sticky;
   top: 0;
   z-index: 100;
   border: 1px #cccccc solid;
