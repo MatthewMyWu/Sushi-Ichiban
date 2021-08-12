@@ -30,7 +30,7 @@
 
 header ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   justify-items: center;
   align-content: center;
   align-items: center;
@@ -80,6 +80,7 @@ img {
 header {
   display: block;
   height: 70px;
+  width: 100vw;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -90,19 +91,10 @@ header {
   border-right: none;
   background-color: #242424;
 }
-header nav {
-  display: block;
-  position: absolute;
-  top: 0;
-}
 header ul {
-  position: absolute;
-  top: 0;
   margin: 0;
   padding: 0;
   height: 70px;
-  width: 100vw;
-  justify-content: space-evenly;
   list-style: none;
 }
 header ul li {
