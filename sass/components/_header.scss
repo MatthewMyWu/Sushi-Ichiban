@@ -1,26 +1,7 @@
 header {
-    position: sticky;
+    position: sticky !important;
     display: block;
     top: 0;
-    border: red 1px solid;
-    width: 100%;
-    height: $headerHeight;
-    z-index: 100;
-    background-color: white;
-
-    ul {
-        overflow: visible;
-        white-space: nowrap;
-        padding-inline-start: 0;
-        list-style: none;
-
-        li {
-            display: inline-block;
-            padding: 0 1rem;
-            color: $subtleTextColour;
-            line-height: 1.8rem;
-        }
-    }
 
 
 

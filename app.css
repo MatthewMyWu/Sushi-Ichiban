@@ -68,14 +68,9 @@ img {
   }
 }
 header {
-  position: sticky;
+  position: sticky !important;
   display: block;
   top: 0;
-  border: red 1px solid;
-  width: 100%;
-  height: 70px;
-  z-index: 100;
-  background-color: white;
   /*
   display: block;
   height: $headerHeight;
@@ -109,18 +104,6 @@ header {
       }
   }
   */
-}
-header ul {
-  overflow: visible;
-  white-space: nowrap;
-  padding-inline-start: 0;
-  list-style: none;
-}
-header ul li {
-  display: inline-block;
-  padding: 0 1rem;
-  color: #b1b1b1;
-  line-height: 1.8rem;
 }
 
 .sidebar {
