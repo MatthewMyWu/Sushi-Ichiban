@@ -65,5 +65,8 @@ const menuApp = new Vue({
         maki_rolls: dishData.maki_rolls,
         nigiri_and_sashimi: dishData.nigiri_and_sashimi,
         temaki: dishData.temaki,
+        torch_sushi: dishData.torch_sushi,
+        sushi_pizza: dishData.sushi_pizza,
+        combos: dishData.combos,
     }
 });

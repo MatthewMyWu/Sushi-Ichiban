@@ -74,7 +74,7 @@ const maki_rolls = {
             price: "5.25",
             image: placeholder,
         },
-        // SHOULD WE SPLIT INTO SEPERATE SECTION HERE?
+        // MATTHEW SHOULD WE SPLIT INTO SEPERATE SECTION HERE?
         {
             number: "601",
             name: "Outsider Roll",
