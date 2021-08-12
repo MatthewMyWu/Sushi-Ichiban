@@ -1,4 +1,32 @@
 header {
+    position: sticky;
+    display: block;
+    top: 0;
+    border: red 1px solid;
+    width: 100%;
+    height: $headerHeight;
+    z-index: 100;
+    background-color: white;
+
+    ul {
+        overflow: visible;
+        white-space: nowrap;
+        padding-inline-start: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding: 0 1rem;
+            color: $subtleTextColour;
+            line-height: 1.8rem;
+        }
+    }
+
+
+
+
+
+    /*
     display: block;
     height: $headerHeight;
     width: 100vw;
@@ -20,7 +48,6 @@ header {
         padding: 0;
         height: $headerHeight;
         list-style: none;
-
         li {
             display: inline;
             margin: 5px, 0;
@@ -31,4 +58,5 @@ header {
             }
         }
     }
+    */
 }

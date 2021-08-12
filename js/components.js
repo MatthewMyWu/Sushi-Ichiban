@@ -6,8 +6,8 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<header>
             <ul>
-                <li class="desktop"><a href="./index.html"><img src="./images/Logo.jpg" alt=""></a></li>
-                <li><a href="./index.html">Home4</a></li>
+                <!-- <li class="desktop"><a href="./index.html"><img src="./images/Logo.jpg" alt=""></a></li> -->
+                <li><a href="./index.html">Home5</a></li>
                 <li><a href="./html/menu.html">Menu</a></li>
                 <li><a href="./html/contact.html">Contact</a></li>
             </ul>

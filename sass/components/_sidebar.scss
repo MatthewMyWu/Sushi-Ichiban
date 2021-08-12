@@ -16,11 +16,9 @@
             line-height: 1.8rem;
         }
     }
-}
 
-// RESIZING
-@media only screen and (max-width: $tabletWidth) {
-    .sidebar {
+    // RESIZING
+    @media only screen and (max-width: $tabletWidth) {
         display: block;
         top: $headerHeight;
         width: 100%;
