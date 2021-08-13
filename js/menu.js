@@ -10,7 +10,7 @@ const MenuItem = Vue.component("menu-item", {
             <p class="dish-price">{{price}}</p>
         </div>
         <div class="image-container">
-            <img loading="lazy" class="dish-image" :src="image" alt="">
+            <img loading="lazy" class="dish-image" :src="image" v-bind:alt="name">
         </div>
     </div>`
 });
