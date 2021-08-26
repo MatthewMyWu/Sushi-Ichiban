@@ -14,7 +14,7 @@ const dinner = {
         {
             number: "402",
             name: "Teriyaki Beef",
-            description: "Pan fried sliced beef with teriyaki sauce",
+            description: "Pan fried sliced beef with teriyaki sauce, mushroom, and onion",
             price: "16.95",
             image: path + "teriyaki beef.jpg",
         },
@@ -56,14 +56,14 @@ const dinner = {
         {
             number: "407",
             name: "Sushi & Tempura",
-            description: "",
+            description: "Sushi (tuna, salmon, red snapper, special scallop, 2pcs outsider), tempura (2pcs prawn and 4pcs veggies)",
             price: "20.95",
             image: path + "sushi & tempura.jpg",
         },
         {
             number: "409",
             name: "Unagi Don",
-            description: "",
+            description: "BBQ eel with unagi sauce served on rice",
             price: "18.95",
             image: path + "unagi don.jpg",
         },

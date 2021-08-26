@@ -33,20 +33,6 @@ const sushi_pizza = {
             image: placeholder,
         },
         {
-            number: "175",
-            name: "Crabmeat Pizza",
-            description: "",
-            price: "9.95",
-            image: placeholder,
-        },
-        {
-            number: "176",
-            name: "Spicy Crabmeat Pizza",
-            description: "",
-            price: "9.95",
-            image: placeholder,
-        },
-        {
             number: "177",
             name: "Avocado Pizza",
             description: "",

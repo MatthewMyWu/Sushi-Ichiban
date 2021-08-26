@@ -189,14 +189,14 @@ const appetizers = {
         {
             number: "134",
             name: "Chicken Katsu",
-            description: "",
+            description: "Breaded and deep fried chicken",
             price: "6.95",
             image: path + "chicken katsu.jpg",
         },
         {
             number: "135",
             name: "Pork Katsu",
-            description: "",
+            description: "Breaded and deep fried pork",
             price: "6.95",
             image: path + "pork katsu.jpg",
         },

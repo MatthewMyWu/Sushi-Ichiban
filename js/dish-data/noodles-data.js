@@ -56,14 +56,14 @@ const noodles = {
         {
             number: "307",
             name: "Unagi Fried Rice",
-            description: "Fried Rice served with BBQ eel",
+            description: "Pan fried Rice served with BBQ eel, corn, and cucumber",
             price: "13.95",
             image: placeholder,
         },
         {
             number: "308",
             name: "Chicken Fried Rice",
-            description: "",
+            description: "Pan fried rice with chicken, egg, corn, and cucumber",
             price: "12.95",
             image: placeholder,
         },
