@@ -118,7 +118,12 @@ header ul li img, header-component ul li img {
   padding-inline-start: 0;
   list-style: none;
 }
+.sidebar ul .nav_highlight {
+  border-radius: 3px;
+  border-left: #c91c1c 6px solid;
+}
 .sidebar ul li {
+  padding-left: 8px;
   color: #b1b1b1;
   line-height: 1.8rem;
 }
@@ -135,6 +140,10 @@ header ul li img, header-component ul li img {
   .sidebar ul {
     overflow: visible;
     white-space: nowrap;
+  }
+  .sidebar ul .nav_highlight {
+    border-left: none;
+    border-bottom: #c91c1c 6px solid;
   }
   .sidebar ul li {
     display: inline-block;

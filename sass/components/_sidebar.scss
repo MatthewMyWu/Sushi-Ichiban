@@ -11,7 +11,13 @@
         padding-inline-start: 0;
         list-style: none;
 
+        .nav_highlight {
+            border-radius: 3px;
+            border-left: rgb(201, 28, 28) 6px solid;
+        }
+
         li {
+            padding-left: 8px;
             color: $subtleTextColour;
             line-height: 1.8rem;
         }
@@ -30,6 +36,11 @@
         ul {
             overflow: visible;
             white-space: nowrap;
+
+            .nav_highlight {
+                border-left: none;
+                border-bottom: rgb(201, 28, 28) 6px solid;
+            }
 
             li {
                 display: inline-block;
