@@ -16,7 +16,25 @@ class Header extends HTMLElement {
 }
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class Footer extends HTMLElement {
+    constructor() {
+        super();
+    }
 
+    connectedCallback() {
+        this.innerHTML = `<footer>
+        <span>Copyright © 2021</span>
+        <span>Created By Matthew Wu</span>
+        <span>Icons by Freepik, Smash Icons, Good Ware, Gregor Cresnar, and Pixel Perfect from www.flaticon.com</span>
+    </footer>`;
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 class MenuItem extends HTMLElement {
     constructor() {
         super();
@@ -36,10 +54,12 @@ class MenuItem extends HTMLElement {
 
 
 customElements.define('header-component', Header);
+customElements.define('footer-component', Footer);
 customElements.define('menu-item-component', MenuItem);
 
 const all = {
     Header,
+    Footer,
     MenuItem,
 }
 export default all;
