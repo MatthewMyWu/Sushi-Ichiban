@@ -15,7 +15,7 @@ const dinner = {
             number: "402",
             name: "Teriyaki Beef",
             description: "Pan fried sliced beef with teriyaki sauce, mushroom, and onion",
-            price: "16.95",
+            price: "17.95",
             image: path + "teriyaki beef.jpg",
         },
         {
@@ -43,7 +43,7 @@ const dinner = {
             number: "405",
             name: "Tonkatsu Don",
             description: "Deep fried breaded pork with onion and egg on rice",
-            price: "12.95",
+            price: "13.95",
             image: placeholder,
         },
         {

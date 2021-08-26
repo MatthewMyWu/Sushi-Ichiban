@@ -6,10 +6,10 @@ const appetizers = {
     items: [
         {
             number: "100",
-            name: "Chicken Egg Drop",
+            name: "Rice",
             description: "",
-            price: "2.20",
-            image: path + "chicken egg drop soup.jpg",
+            price: "2.30",
+            image: placeholder,
         },
         {
             number: "101",
@@ -22,7 +22,7 @@ const appetizers = {
             number: "102",
             name: "Small Salad",
             description: "",
-            price: "2.20",
+            price: "2.30",
             image: path + "small salad.jpg",
         },
         {
@@ -126,7 +126,7 @@ const appetizers = {
         {
             number: "114",
             name: "Spring Roll",
-            description: "(4pcs)",
+            description: "Veggie spring roll (4pcs)",
             price: "6.95",
             image: path + "spring roll.jpg",
         },
@@ -134,7 +134,7 @@ const appetizers = {
             number: "115",
             name: "Oyster on Shell",
             description: "(6pcs)",
-            price: "13.95",
+            price: "14.95",
             image: path + "oyster on shell.jpg",
         },
         {
@@ -169,14 +169,14 @@ const appetizers = {
             number: "131",
             name: "BBQ Squid",
             description: "",
-            price: "11.95",
+            price: "12.95",
             image: placeholder,
         },
         {
             number: "132",
             name: "Deep Fried Fish Balls",
             description: "(8pcs)",
-            price: "5.95",
+            price: "6.25",
             image: placeholder,
         },
         {
