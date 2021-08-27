@@ -423,7 +423,7 @@ header ul li img, header-component ul li img {
   }
 }
 .contact {
-  padding-top: 70px;
+  padding: 70px 0;
   position: relative;
   height: fit-content;
 }
