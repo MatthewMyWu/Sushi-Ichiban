@@ -39,6 +39,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////////////////
     .text_container {
         @extend %verticalCenter;
+        
+        img {
+            max-width: 90%;
+
+            &.logo {
+                max-width: max(180px, 30vw);
+                max-height: max(200px, 30vh);
+            }
+        }
 
         h1,
         h2 {

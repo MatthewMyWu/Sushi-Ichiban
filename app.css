@@ -246,6 +246,13 @@ header ul li img, header-component ul li img {
     height: 100%;
   }
 }
+.landing .text_container img, .banner .text_container img {
+  max-width: 90%;
+}
+.landing .text_container img.logo, .banner .text_container img.logo {
+  max-width: max(180px, 30vw);
+  max-height: max(200px, 30vh);
+}
 .landing .text_container h1, .banner .text_container h1,
 .landing .text_container h2,
 .banner .text_container h2 {
