@@ -42,7 +42,6 @@ import * as dishData from "./dish-data/all.js";
 const menuApp = new Vue({
     el: "#menu-app",
     data: {
-        // appetizers: data.appetizers,
         appetizers: dishData.appetizers,
         tempura: dishData.tempura,
         noodles: dishData.noodles,
@@ -96,7 +95,7 @@ const observer = new IntersectionObserver(function (entries) {
             matchSectionToNav(entry["target"]).classList.remove("nav_highlight");
         }
     }
-}, { threshold: [0.1] } );
+}, { threshold: [0.01, 0.02, 0.05, 0.07, 0.09, 0.1] } );
 
 
 const matchSectionToNav = (section) => {

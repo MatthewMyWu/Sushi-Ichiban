@@ -44,7 +44,7 @@ const dinner = {
             name: "Tonkatsu Don",
             description: "Deep fried breaded pork with onion and egg on rice",
             price: "13.95",
-            image: placeholder,
+            image: path + "tonkatsu don.jpg",
         },
         {
             number: "406",

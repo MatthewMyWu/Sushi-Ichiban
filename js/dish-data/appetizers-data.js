@@ -27,17 +27,17 @@ const appetizers = {
         },
         {
             number: "138",
-            name: "Deep Fried Softshell Crab",
+            name: "Deep Fried Soft Shell Crab",
             description: "",
             price: "11.95",
-            image: placeholder,
+            image: path + "deep fried soft shell crab.jpg",
         },
         {
             number: "137",
             name: "House Salad",
             description: "mixed vegetable with cucumber, avocado",
             price: "7.95",
-            image: placeholder,
+            image: path + "house salad.jpg",
         },
         {
             number: "104",
@@ -149,7 +149,7 @@ const appetizers = {
             name: "Takoyaki",
             description: "Deep fried octopus ball (5pcs)",
             price: "7.50",
-            image: placeholder,
+            image: path + "takoyaki.jpg",
         },
         {
             number: "120",

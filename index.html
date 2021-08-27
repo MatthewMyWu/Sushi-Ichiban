@@ -12,8 +12,12 @@
     <title>Sushi Ichiban</title>
 
     <!-- FONT AWESOME -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+        integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
 
+    <!-- VUE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="./js/index.js" type="module" defer></script>
 </head>
 
 <body>
@@ -51,6 +55,14 @@
             <img src="./images/Lamps.jpg" class="bottom">
         </div>
     </section>
+
+    <div id="index-app">
+        <section id="feature">
+            <h3>Feature combos</h3>
+
+            <feature-item v-bind:item_number="combos"></feature-item>
+        </section>
+    </div>
 </body>
 
 </html>

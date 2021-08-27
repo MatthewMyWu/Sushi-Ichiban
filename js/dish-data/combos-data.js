@@ -16,14 +16,14 @@ const combos = {
             name: "Maki Combo",
             description: "Cali roll, salmon roll, avocado with kappa roll, 2pcs outsider roll",
             price: "13.95",
-            image: placeholder,
+            image: path + "maki combo.jpg",
         },
         {
             number: "502",
             name: "Assorted Sushi",
             description: "Salmon x2, tuna x2, ebi, toro, hamachi, special scallop, cali roll, 2pcs outsider roll",
             price: "22.95",
-            image: placeholder,
+            image: path + "assorted sushi.jpg",
         },
         {
             number: "503",
@@ -37,14 +37,14 @@ const combos = {
             name: "Love Boat",
             description: "8pcs sashimi (tuna, salmon), 8pcs sushi (salmon, tuna, red snapper, ebi), 22pcs rolls (sake, california, outsider). Comes with soup & salad for 2",
             price: "43.95",
-            image: placeholder,
+            image: path + "love boat.jpg",
         },
         {
             number: "505",
             name: "Boat Deluxe",
             description: "8pcs sashimi (salmon, tuna), 4pcs sushi (salmon, tuna), 10pcs roll (california, outsider), yakitori chicken, gyoza, tempura. Comes with soup & salad for 2",
             price: "46.95",
-            image: placeholder,
+            image: path + "boat deluxe.jpg",
         },
         {
             number: "506",

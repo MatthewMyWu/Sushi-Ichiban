@@ -115,7 +115,7 @@ const maki_rolls = {
             name: "Spicy Salmon Roll",
             description: "Salmon, avocado, cucumber, spicy sauce (6pcs)",
             price: "7.95",
-            image: placeholder,
+            image: path + "spicy salmon roll.jpg",
         },
         {
             number: "606",

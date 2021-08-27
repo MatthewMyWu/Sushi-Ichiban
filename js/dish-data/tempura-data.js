@@ -23,7 +23,7 @@ const tempura = {
             name: "Assorted Tempura",
             description: " 4pcs prawn tempura, 5pcs vegetable tempura",
             price: "10.95",
-            image: placeholder,
+            image: path + "assorted tempura.jpg",
         },
         {
             number: "204",
@@ -72,7 +72,7 @@ const tempura = {
             name: "Large Tempura",
             description: "6pcs prawn tempura, 8pcs vegetable tempura",
             price: "15.95",
-            image: placeholder,
+            image: path + "prawn tempura.jpg",
         },
     ]
 }

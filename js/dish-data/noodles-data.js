@@ -44,7 +44,7 @@ const noodles = {
             name: "Beef Yakisoba",
             description: "Pan fried noodles with vegetables",
             price: "13.95",
-            image: placeholder,
+            image: path + "beef yakisoba.jpg",
         },
         {
             number: "306",
