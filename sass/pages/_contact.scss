@@ -1,3 +1,6 @@
 .contact {
     @extend %verticalCenter;
+    padding-top: $headerHeight;
+    position: relative;
+    height: fit-content;
 }

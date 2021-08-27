@@ -422,5 +422,10 @@ header ul li img, header-component ul li img {
     grid-column-start: 1;
   }
 }
+.contact {
+  padding-top: 70px;
+  position: relative;
+  height: fit-content;
+}
 
 /*# sourceMappingURL=app.css.map */
