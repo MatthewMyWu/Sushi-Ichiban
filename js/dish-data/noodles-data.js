@@ -58,7 +58,7 @@ const noodles = {
             name: "Unagi Fried Rice",
             description: "Pan fried Rice served with BBQ eel, corn, and cucumber",
             price: "13.95",
-            image: placeholder,
+            image: path + "unagi fried rice.jpg",
         },
         {
             number: "308",
