@@ -47,7 +47,8 @@ const menuApp = new Vue({
         noodles: dishData.noodles,
         dinner: dishData.dinner,
         maki_rolls: dishData.maki_rolls,
-        nigiri_and_sashimi: dishData.nigiri_and_sashimi,
+        nigiri: dishData.nigiri,
+        sashimi: dishData.sashimi,
         temaki: dishData.temaki,
         torch_sushi: dishData.torch_sushi,
         sushi_pizza: dishData.sushi_pizza,
@@ -68,7 +69,8 @@ const tempura_section = document.getElementById("tempura");
 const noodles_section = document.getElementById("noodles");
 const dinner_section = document.getElementById("dinner");
 const maki_rolls_section = document.getElementById("maki_rolls");
-const nigiri_and_sashimi_section = document.getElementById("nigiri_and_sashimi");
+const nigiri_section = document.getElementById("nigiri");
+const sashimi_section = document.getElementById("sashimi");
 const temaki_section = document.getElementById("temaki");
 const torch_sushi_section = document.getElementById("torch_sushi");
 const sushi_pizza_section = document.getElementById("sushi_pizza");
@@ -79,7 +81,8 @@ const tempura_nav = document.getElementById("tempura_nav");
 const noodles_nav = document.getElementById("noodles_nav");
 const dinner_nav = document.getElementById("dinner_nav");
 const maki_rolls_nav = document.getElementById("maki_rolls_nav");
-const nigiri_and_sashimi_nav = document.getElementById("nigiri_and_sashimi_nav");
+const nigiri_nav = document.getElementById("nigiri_nav");
+const sashimi_nav = document.getElementById("sashimi_nav");
 const temaki_nav = document.getElementById("temaki_nav");
 const torch_sushi_nav = document.getElementById("torch_sushi_nav");
 const sushi_pizza_nav = document.getElementById("sushi_pizza_nav");
@@ -89,13 +92,14 @@ const observer = new IntersectionObserver(function (entries) {
     // console.log(entries.length + " " + entries[0]["isIntersecting"] + " " + entries[0]["intersectionRatio"]);
     //Figure out which section to highlight
     for (const entry of entries) {
+        // console.log(entry["target"].id);
         if (entry["isIntersecting"]) {
             matchSectionToNav(entry["target"]).classList.add("nav_highlight");
         } else {
             matchSectionToNav(entry["target"]).classList.remove("nav_highlight");
         }
     }
-}, { threshold: [0.01, 0.02, 0.05, 0.07, 0.09, 0.1] } );
+}, { threshold: [0.01, 0.02, 0.05, 0.07, 0.09, 0.1] });
 
 
 const matchSectionToNav = (section) => {
@@ -116,20 +120,23 @@ const matchSectionToNav = (section) => {
         case maki_rolls_section:
             ret = maki_rolls_nav;
             break;
-        case nigiri_and_sashimi_section:
-            ret =  nigiri_and_sashimi_nav;
+        case nigiri_section:
+            ret = nigiri_nav;
+            break;
+        case sashimi_section:
+            ret = sashimi_nav;
             break;
         case temaki_section:
-            ret =  temaki_nav;
+            ret = temaki_nav;
             break;
         case torch_sushi_section:
-            ret =  torch_sushi_nav;
+            ret = torch_sushi_nav;
             break;
         case sushi_pizza_section:
-            ret =  sushi_pizza_nav;
+            ret = sushi_pizza_nav;
             break;
         case combos_section:
-            ret =  combos_nav;
+            ret = combos_nav;
             break;
     }
     return ret;
@@ -142,7 +149,8 @@ observer.observe(document.querySelector("#tempura"));
 observer.observe(document.querySelector("#noodles"));
 observer.observe(document.querySelector("#dinner"));
 observer.observe(document.querySelector("#maki_rolls"));
-observer.observe(document.querySelector("#nigiri_and_sashimi"));
+observer.observe(document.querySelector("#nigiri"));
+observer.observe(document.querySelector("#sashimi"));
 observer.observe(document.querySelector("#temaki"));
 observer.observe(document.querySelector("#torch_sushi"));
 observer.observe(document.querySelector("#sushi_pizza"));

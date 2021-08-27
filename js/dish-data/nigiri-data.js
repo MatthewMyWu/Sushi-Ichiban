@@ -1,7 +1,7 @@
 import { imageFolderPath, placeholder, } from "./paths.js";
-const path = imageFolderPath + "nigiri and sashimi images/";
+const path = imageFolderPath + "nigiri images/";
 
-const nigiri_and_sashimi = {
+const nigiri = {
     name: "Nigiri and Sashimi",
     items:  [
         {
@@ -161,4 +161,4 @@ const nigiri_and_sashimi = {
     ]
 }
 
-export { nigiri_and_sashimi };
+export { nigiri };

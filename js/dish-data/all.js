@@ -3,7 +3,8 @@ import { tempura } from './tempura-data.js';
 import { noodles } from './noodles-data.js';
 import { dinner } from './dinner-data.js';
 import { maki_rolls } from './maki-rolls-data.js';
-import { nigiri_and_sashimi } from './nigiri-&-sashimi-data.js';
+import { nigiri } from './nigiri-data.js';
+import { sashimi } from './sashimi-data.js';
 import { temaki } from './temaki-data.js';
 import { torch_sushi } from './torch-sushi-data.js';
 import { sushi_pizza } from './sushi-pizza-data.js';
@@ -16,7 +17,8 @@ export {
     noodles,
     dinner,
     maki_rolls,
-    nigiri_and_sashimi,
+    nigiri,
+    sashimi,
     temaki,
     torch_sushi,
     sushi_pizza,
