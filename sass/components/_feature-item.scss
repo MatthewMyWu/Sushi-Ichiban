@@ -1,0 +1,60 @@
+.feature-item {
+    $featureWidth: 250px;
+    $featureMargin: 10px;
+
+    margin: $featureMargin;
+    width: $featureWidth;
+
+    .image-container {
+        // max-width: min(300px, 40vw);
+        // height: min(250px, 35vw);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12% 12% 0 0;
+        }
+    }
+
+    .text-container {
+        background-color: #bb2b23;
+        padding: 10px;
+        line-height: 2rem;
+        height: 280px;
+        overflow: scroll;
+        border-radius: 0 0 8% 8%;
+
+        .dish-number {
+            font-size: smaller;
+            color: $subtleTextColour;
+            display: inline;
+        }
+
+        .dish-name {
+            color: $defaultTextColour;
+            display: inline;
+        }
+
+        .dish-description {
+            color: $defaultTextColour;
+            display: block;
+        }
+
+        .dish-price {
+            color: $highlightTextColour;
+            display: block;
+        }
+    }
+
+
+    // RESIZING
+    @media only screen and (max-width: 2*$featureWidth + 4*$featureMargin - 1) {
+        .text-container {
+            height: fit-content;
+            .dish-description {
+                font-size: smaller;
+            }
+        }
+    }
+}

@@ -38,7 +38,6 @@ const MenuSection = Vue.component("menu-section", {
 
 import * as dishData from "./dish-data/all.js";
 
-
 const menuApp = new Vue({
     el: "#menu-app",
     data: {
