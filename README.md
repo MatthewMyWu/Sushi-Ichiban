@@ -1,3 +1,3 @@
 Website for Sushi Ichiban restaurant.
 
-Website: sushiichiban.ca
+Website: [sushiichiban.ca](https://sushiichiban.ca/)
