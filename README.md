@@ -1,1 +1,3 @@
-this is the readme
+Website for Sushi Ichiban restaurant.
+
+Link to website:
