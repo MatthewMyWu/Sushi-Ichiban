@@ -8,7 +8,6 @@ export default defineConfig({
     vue(),
     viteStaticCopy({
       targets: [
-        { src: "html", dest: "" },
         { src: "images", dest: "" },
         { src: "fonts", dest: "" },
         { src: "js", dest: "" },
