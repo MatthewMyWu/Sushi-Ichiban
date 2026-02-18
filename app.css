@@ -34,6 +34,10 @@ header ul, header-component ul, #announcement, #feature .layout {
   flex-wrap: nowrap;
   width: 100%; }
 
+#announcement {
+  padding: 24px;
+}
+
 body {
   padding: 0;
   margin: 0;
