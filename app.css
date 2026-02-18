@@ -25,7 +25,7 @@
   top: 0;
   bottom: 0; }
 
-header ul, header-component ul, #feature .layout {
+header ul, header-component ul, #announcement, #feature .layout {
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
