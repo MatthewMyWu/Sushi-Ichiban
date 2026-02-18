@@ -36,6 +36,7 @@ header ul, header-component ul, #feature .layout {
 
 #announcement {
   padding: 24px;
+  flex-direction: column;
 }
 
 body {
